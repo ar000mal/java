@@ -10,7 +10,7 @@ class Palindrome {
         for(int i=str.length()-1 ; i>=0 ; i--){
             rev += str.charAt(i);
         }
-        if(str.equals(rev)){
+        if(str.equalsIgnoreCase(rev)){
             System.out.println(str + " is a palindrome.");
         }
         else{
